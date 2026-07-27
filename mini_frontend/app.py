@@ -17,8 +17,10 @@ log_page = st.Page("app_pages/03_log_view.py")
 database_page = st.Page("app_pages/05_database_view.py")
 df_page = st.Page("app_pages/df.py")
 chart_page = st.Page("app_pages/chart.py")
+student_page = st.Page("app_pages/student.py")
 
-pages = [home_page, login_page, signup_page, log_page, database_page, df_page, chart_page]
+
+pages = [home_page, student_page, login_page, signup_page, log_page, database_page, df_page, chart_page]
 
 
 
@@ -35,5 +37,6 @@ with st.sidebar:
     st.divider()
     st.page_link(df_page, label="🌱 DataFrame")
     st.page_link(chart_page, label="🌱 Chart")
+    st.page_link(student_page, label="🌱 Student")
 
 navigation.run()
