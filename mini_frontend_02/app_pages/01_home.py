@@ -2,6 +2,10 @@ import streamlit as st
 
 
 st.title("🏠 홈")
+
+if st.session_state.loginout == "login":
+    st.info(f"{st.session_state.login_id} 로그인 상태 입니다.")
+
 st.info("Layout에 오신 것을 환영합니다.")
 
 col_visitors, col_logs, col_complete = st.columns(3)
